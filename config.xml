@@ -20,7 +20,7 @@
     <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 	
-	<preference name="permissions"                value="none"/>
+
 	
 <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
