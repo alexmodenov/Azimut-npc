@@ -21,7 +21,8 @@
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 	<gap:plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />
 	
-
+    <access origin="tel:*" launch-external="yes" />
+    <access origin="mailto:*" launch-external="yes" />
 	
 <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
