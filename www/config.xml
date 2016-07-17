@@ -11,7 +11,17 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Alex Modenov
     </author>
+	<feature name="http://api.phonegap.com/1.0/battery"/>
+	<feature name="http://api.phonegap.com/1.0/camera"/>
+	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	<feature name="http://api.phonegap.com/1.0/file"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/media"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
     <access origin="*" />
+	<access origin="tel:*" launch-external="yes" />
+    <access origin="mailto:*" launch-external="yes" />
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <gap:plugin name="com.plugin.datepicker" version="0.4.0" />
@@ -20,8 +30,7 @@
     <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 	
-    <access origin="tel:*" launch-external="yes" />
-    <access origin="mailto:*" launch-external="yes" />
+    
 	
 <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -70,4 +79,3 @@
 
 
 </widget>
-
