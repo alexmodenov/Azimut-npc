@@ -22,7 +22,6 @@
     <access origin="*" />
 	<access origin="tel:*" launch-external="yes" />
     <access origin="mailto:*" launch-external="yes" />
-	<access origin="skype:*" launch-external="yes" />
 	<access origin="*.google.com"/>
     <access origin="*.googleapis.com"/>
     <gap:platform name="ios" />
