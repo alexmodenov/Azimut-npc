@@ -9,7 +9,7 @@
         Corporate application of LLC «NPC AZIMUT»
     </description>
     <author href="https://build.phonegap.com" email="support@phonegap.com">
-        Alexander Modenov
+        Alex Modenov
     </author>
 	<feature name="http://api.phonegap.com/1.0/battery"/>
 	<feature name="http://api.phonegap.com/1.0/camera"/>
