@@ -27,10 +27,10 @@
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <gap:platform name="winphone" />
-    <gap:plugin name="com.plugin.datepicker" version="0.4.0" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.6.0" />
-    <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
-    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
+    <gap:plugin name="cordova-plugin-datepicker" source="npm" />
+    <gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <gap:plugin name="cordova-plugin-email-composer" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-legacy-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
