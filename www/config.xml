@@ -33,6 +33,7 @@
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-legacy-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 	
     
 	
