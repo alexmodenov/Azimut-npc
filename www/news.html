@@ -7,19 +7,35 @@
       <div class="center">Новости</div>
     </ons-toolbar>
 
-    <script type="text/javascript">
-$(document).ready(function()
- {
-   var url="http://yoursite.com/?json=get_recent_posts";
-   $.getJSON(url,function(result){
-    $.each(result.posts, function(i, field){
-       var title=field.title;
-       $("#listview").append("<li><h2>"+title+"<h2></li>");
-    });
-   });
- });
-</script>
-<ul id="listview"></ul>
+    <div class="app-page news-page" ng-controller="newsController" data-ng-init="getAllRecords()">
+
+      <ons-list modifier="news">
+
+        <ons-list-item modifier="chevron" class="list-item-container" ng-repeat="item in items" ng-click="showPost($index)">
+          <ons-row>
+            <ons-col width="95px">
+              <img ng-show="{{ item.thumbnail_images }}" ng-src="{{ item.thumbnail_images.thumbnail.url }}" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                {{ item.title | limitTo: 15 }}...
+              </div>
+              <div class="location" ng-show="{{ item.categories }}">
+                <i class="ion-pricetags"></i> <span ng-repeat="cat in item.categories">{{cat.title}} </span>
+              </div>
+              <div class="desc">
+                {{ item.excerpt | htmlToPlaintext | limitTo: 60 }}...                
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+      </ons-list>
+
+      <ons-button id="moreButton" modifier="large" should-spin="{{isFetching}}" ng-click="nextPage()">more news</ons-button>
+
+    </div>
 
   </ons-page>
 </ons-navigator>   
