@@ -34,6 +34,10 @@
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-legacy-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" />
+	<gap:plugin name="cordova-plugin-file" source="npm" />
+	<gap:plugin name="cordova-plugin-file-transfer" source="npm" />
 	
     
 	
