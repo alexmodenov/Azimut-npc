@@ -2,7 +2,7 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.azimut-npc.start"
-        versionCode = "16" 
+        versionCode = "17" 
         version     = "1.0.1" >
     <name>NPC Azimut</name>
     <description>
@@ -19,7 +19,7 @@
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
-    <access origin="*" />
+    
 	<access origin="tel:*" launch-external="yes" />
     <access origin="mailto:*" launch-external="yes" />
 	<access origin="*.google.com"/>
